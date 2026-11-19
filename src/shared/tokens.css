@@ -1,0 +1,73 @@
+:root {
+  --bg: #0b0f1a;
+  --panel: #131a2b;
+  --text: #e8ecf5;
+  --muted: #9aa6c1;
+  --accent: #7cffb2;
+  --accent-2: #ffd166;
+  --border: #27324d;
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.pixel {
+  font-family: var(--font-pixel);
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  background: transparent;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.soon {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.soon h1 {
+  font-size: clamp(1rem, 4vw, 1.6rem);
+}
+
+.switch-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--panel);
+  z-index: 10;
+}
