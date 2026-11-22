@@ -1,5 +1,5 @@
 body {
-  overflow: hidden; /* Prompt 4 will allow scrolling */
+  overflow: hidden; /* Prompt 10 will allow scrolling */
 }
 
 #stage {
@@ -49,4 +49,17 @@ body {
 
 .fallback[hidden] {
   display: none;
+}
+
+.debug-label {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 6;
+  padding: 0.5rem 0.75rem;
+  font: 12px/1.5 monospace;
+  white-space: pre;
+  color: #e8ecf5;
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
