@@ -1,0 +1,52 @@
+body {
+  overflow: hidden; /* Prompt 4 will allow scrolling */
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+}
+
+#stage canvas {
+  display: block;
+}
+
+.hud {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+  max-width: 22rem;
+  padding: 0.8rem 1rem;
+  background: rgba(11, 15, 26, 0.75);
+  border: 2px solid var(--border);
+}
+
+.hud h1 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.hud p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.fallback {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background: var(--bg);
+}
+
+.fallback[hidden] {
+  display: none;
+}
